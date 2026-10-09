@@ -1,6 +1,6 @@
 package me.apeiros.magicxpansion.setup.items.georesources;
 
-import com.github.drakescraft_labs.slimefun4.api.geo.GEOResource;
+import io.github.thebusybiscuit.slimefun4.api.geo.GEOResource;
 import org.bukkit.NamespacedKey;
 import org.bukkit.World;
 import org.bukkit.block.Biome;

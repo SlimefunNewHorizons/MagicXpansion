@@ -1,15 +1,15 @@
 package me.apeiros.magicxpansion.utils;
 
-import io.github.mooy1.infinitylib.groups.MultiGroup;
-import io.github.mooy1.infinitylib.groups.SubGroup;
-import lombok.experimental.UtilityClass;
+import dev.drake.infinitylib.groups.MultiGroup;
+import dev.drake.infinitylib.groups.SubGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.CustomItem;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import me.apeiros.magicxpansion.MagicXpansion;
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
-import com.github.drakescraft_labs.slimefun4.api.items.CustomItem;
 import org.bukkit.Material;
 
-@UtilityClass
 public final class Categories {
+
+    private Categories() {}
 
    public static final ItemGroup GENERAL = new SubGroup(
             "magicxpansion_general",

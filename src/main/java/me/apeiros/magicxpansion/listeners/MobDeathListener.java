@@ -1,6 +1,6 @@
 package me.apeiros.magicxpansion.listeners;
 
-import com.github.drakescraft_labs.slimefun4.utils.SlimefunUtils;
+import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 import me.apeiros.magicxpansion.setup.MagicXpansionItems;
 import org.bukkit.entity.Evoker;
 import org.bukkit.entity.Illusioner;

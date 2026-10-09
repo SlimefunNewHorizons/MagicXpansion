@@ -1,7 +1,7 @@
 package me.apeiros.magicxpansion.setup;
 
-import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
-import com.github.drakescraft_labs.slimefun4.implementation.items.VanillaItem;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.implementation.items.VanillaItem;
 import me.apeiros.magicxpansion.MagicXpansion;
 import me.apeiros.magicxpansion.setup.items.electric.SoulManipulator;
 import me.apeiros.magicxpansion.setup.items.electric.SoulReactor;
@@ -18,9 +18,9 @@ import me.apeiros.magicxpansion.setup.items.weapons.PoseidonsTrident;
 import me.apeiros.magicxpansion.utils.Categories;
 import me.apeiros.magicxpansion.utils.HeadTextures;
 import me.gallowsdove.foxymachines.Items;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.api.items.CustomItem;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.items.CustomItem;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 

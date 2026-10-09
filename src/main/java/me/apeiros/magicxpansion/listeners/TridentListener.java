@@ -1,8 +1,8 @@
 package me.apeiros.magicxpansion.listeners;
 
-import com.github.drakescraft_labs.slimefun4.implementation.SlimefunPlugin;
-import com.github.drakescraft_labs.slimefun4.utils.SlimefunUtils;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunPlugin;
+import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.Interaction;
 import org.bukkit.Location;
 import org.bukkit.Particle;
 import org.bukkit.Sound;

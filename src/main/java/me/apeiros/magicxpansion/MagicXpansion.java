@@ -1,7 +1,7 @@
 package me.apeiros.magicxpansion;
 
-import io.github.mooy1.infinitylib.core.AbstractAddon;
-import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
+import dev.drake.infinitylib.core.AbstractAddon;
+import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import me.apeiros.magicxpansion.listeners.CrossbowListener;
 import me.apeiros.magicxpansion.listeners.MobDeathListener;
 import me.apeiros.magicxpansion.listeners.TridentListener;
@@ -25,7 +25,7 @@ public class MagicXpansion extends AbstractAddon implements SlimefunAddon {
      * rama y la clave de config quedan solo por cumplir la firma.
      */
     public MagicXpansion() {
-        super("DrakesCraft-Labs", "MagicXpansion", "main", "options.auto-update");
+        super("SlimefunNewHorizons", "MagicXpansion", "main", "options.auto-update");
     }
 
     /**

@@ -3,9 +3,9 @@ package me.apeiros.magicxpansion.setup.items.multiblocks;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.github.drakescraft_labs.slimefun4.libraries.paperlib.PaperLib;
+import io.github.thebusybiscuit.slimefun4.libraries.paperlib.PaperLib;
 import me.apeiros.magicxpansion.setup.MagicXpansionItems;
-import com.github.drakescraft_labs.slimefun4.api.items.CustomItem;
+import io.github.thebusybiscuit.slimefun4.api.items.CustomItem;
 import org.bukkit.Effect;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -16,13 +16,13 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
-import com.github.drakescraft_labs.slimefun4.core.multiblocks.MultiBlockMachine;
-import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
-import com.github.drakescraft_labs.slimefun4.implementation.SlimefunPlugin;
-import com.github.drakescraft_labs.slimefun4.utils.SlimefunUtils;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.core.multiblocks.MultiBlockMachine;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunPlugin;
+import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 
 public class CarbonCrusherMachine extends MultiBlockMachine {
 
