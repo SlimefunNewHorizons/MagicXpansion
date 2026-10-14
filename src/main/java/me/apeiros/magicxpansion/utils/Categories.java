@@ -1,7 +1,7 @@
 package me.apeiros.magicxpansion.utils;
 
-import io.github.mooy1.infinitylib.groups.MultiGroup;
-import io.github.mooy1.infinitylib.groups.SubGroup;
+import dev.drake.infinitylib.groups.MultiGroup;
+import dev.drake.infinitylib.groups.SubGroup;
 import lombok.experimental.UtilityClass;
 import me.apeiros.magicxpansion.MagicXpansion;
 import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
