@@ -73,6 +73,14 @@
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.6.1</version>
                 <configuration>
+                    <transformers>
+                        <!-- Paper must retain Mojang mappings when it loads this shaded addon. -->
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                            <manifestEntries>
+                                <paperweight-mappings-namespace>mojang</paperweight-mappings-namespace>
+                            </manifestEntries>
+                        </transformer>
+                    </transformers>
                     <relocations>
                         <relocation>
                             <pattern>dev.drake.infinitylib</pattern>
