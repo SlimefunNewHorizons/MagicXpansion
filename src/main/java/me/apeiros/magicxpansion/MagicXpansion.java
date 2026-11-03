@@ -25,7 +25,7 @@ public class MagicXpansion extends AbstractAddon implements SlimefunAddon {
      * rama y la clave de config quedan solo por cumplir la firma.
      */
     public MagicXpansion() {
-        super("DrakesCraft-Labs", "MagicXpansion", "main", "options.auto-update");
+        super("SlimefunNewHorizons", "MagicXpansion", "main", "options.auto-update");
     }
 
     /**
