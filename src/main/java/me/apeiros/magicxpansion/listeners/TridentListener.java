@@ -26,18 +26,14 @@ public class TridentListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH, ignoreCancelled = true)
     public void onTridentShoot(ProjectileLaunchEvent e) {
-        Entity shooter = (Entity) e.getEntity().getShooter();
+        Projectile trident = e.getEntity();
+        if (trident.getType() != EntityType.TRIDENT || !(trident.getShooter() instanceof Player player)) {
+            return;
+        }
 
-        if (shooter instanceof Player) {
-            Player player = (Player) shooter;
-
-            if (e.getEntity().getType() == EntityType.TRIDENT &&
-                    (SlimefunUtils.isItemSimilar(player.getInventory().getItemInMainHand(), MagicXpansionItems.POSEIDONS_TRIDENT, false, false))
-                    || (SlimefunUtils.isItemSimilar(player.getInventory().getItemInOffHand(), MagicXpansionItems.POSEIDONS_TRIDENT, false, false))) {
-                Projectile trident = e.getEntity();
-
-                trident.setVelocity(trident.getVelocity().multiply(1.75));
-            }
+        if (SlimefunUtils.isItemSimilar(player.getInventory().getItemInMainHand(), MagicXpansionItems.POSEIDONS_TRIDENT, false, false)
+                || SlimefunUtils.isItemSimilar(player.getInventory().getItemInOffHand(), MagicXpansionItems.POSEIDONS_TRIDENT, false, false)) {
+            trident.setVelocity(trident.getVelocity().multiply(1.75));
         }
     }
 
