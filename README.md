@@ -15,6 +15,16 @@
 Magia, hechizos y maquinaria arcana para Slimefun, adaptado al ecosistema de **DrakesCraft**
 (Paper/Purpur 1.21.11, Java 21).
 
+El parche de lanzamiento de proyectiles (#672) comprueba el tipo de proyectil y
+que su lanzador sea un jugador antes de consultar su inventario. Los dispensadores,
+los mobs y los proyectiles sin lanzador se ignoran; el impulso de 1,75 se limita
+a tridentes de jugadores que lleven Poseidon's Trident en una de sus manos.
+Se conservan los dos listeners y las protecciones del impacto.
+
+Este arreglo tiene pruebas unitarias de regresión; su estado por rama se registra
+en SAORI. `main` usa Paper 1.21.11/Java 21 y `port-26x` Paper 26.2/Java 25.
+Compilar estas ramas no demuestra que el arreglo se haya probado en un servidor.
+
 ## Qué añade
 
 Veintinueve objetos repartidos en siete categorías — general, recursos, objetos mágicos,
