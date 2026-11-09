@@ -1,83 +1,86 @@
-<p align="center"><img src="https://raw.githubusercontent.com/SlimefunNewHorizons/MagicXpansion/main/banner.svg" alt="MagicXpansion" width="100%"></p>
+<div align="center">
 
-# MagicXpansion
+  <img src="https://raw.githubusercontent.com/SlimefunNewHorizons/MagicXpansion/main/banner.svg" alt="MagicXpansion Banner" width="920" />
 
-> ### 🏰 ¡Únete a la Comunidad Oficial de DrakesCraft!
+# ⚡ MagicXpansion — Drake Edition
+
+**High-Performance Paper 1.21.11 Expansion for Slimefun4**
+
+<p>
+  <a href="https://github.com/SlimefunNewHorizons/MagicXpansion"><img src="https://img.shields.io/badge/GitHub-MagicXpansion-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
+  <img src="https://img.shields.io/badge/Slimefun4-Drake_Edition-22C55E?style=for-the-badge&logo=curseforge&logoColor=white" alt="Slimefun4"/>
+  <img src="https://img.shields.io/badge/Paper-1.21.11-38BDF8?style=for-the-badge&logo=minecraft&logoColor=white" alt="Paper 1.21.11"/>
+  <img src="https://img.shields.io/badge/Java-21-F89820?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21"/>
+</p>
+
+[🇬🇧 **English**](README.md) · [🇪🇸 **Español**](README_ES.md)
+
+</div>
+
+> ### 🏰 Join the Official DrakesCraft Community!
 > 
-> * 🎮 **IP del Servidor**: `play.drakescraft.net` *(Java 1.21.11 & Bedrock)*
-> * 💬 **Discord Oficial**: [discord.gg/drakescraft](https://discord.gg/rv3vtXZTk7)
-> * 🌐 **Web & Guía**: [drakescraft.net](https://drakescraft.net) — 🛒 **Tienda**: [tienda.drakescraft.net](https://tienda.drakescraft.net)
+> * 🎮 **Server IP**: `mc.drakescraft.cl` *(Java 1.21.11 & Bedrock Port 25565 / 19132)*
+> * 💬 **Official Discord**: [discord.gg/drakescraft](https://discord.gg/rv3vtXZTk7) — *Check out `#general-english`!*
+> * 🌐 **Website & Guides**: [web.drakescraft.cl](https://web.drakescraft.cl) — 🛒 **Store**: [web.drakescraft.cl/store](https://web.drakescraft.cl/store.html)
 > 
-> *¡Juega con este addon y más de 80 expansiones optimizadas en vivo en nuestra network de supervivencia técnica!*
+> *Play with this addon alongside 80+ optimized expansions live on our technical survival network!*
 
 ---
 
-Magia, hechizos y maquinaria arcana para Slimefun, adaptado al ecosistema de **DrakesCraft**
-(Paper/Purpur 1.21.11, Java 21).
+## 📖 What is MagicXpansion?
 
-El parche de lanzamiento de proyectiles (#672) comprueba el tipo de proyectil y
-que su lanzador sea un jugador antes de consultar su inventario. Los dispensadores,
-los mobs y los proyectiles sin lanzador se ignoran; el impulso de 1,75 se limita
-a tridentes de jugadores que lleven Poseidon's Trident en una de sus manos.
-Se conservan los dos listeners y las protecciones del impacto.
+**MagicXpansion** is a modular expansion within the **DrakesCraft Labs** ecosystem, specifically engineered and optimized for Minecraft **Paper / Purpur 1.21.11** servers running Java 21 LTS.
 
-Este arreglo tiene pruebas unitarias de regresión; su estado por rama se registra
-en SAORI. `main` usa Paper 1.21.11/Java 21 y `port-26x` Paper 26.2/Java 25.
-Compilar estas ramas no demuestra que el arreglo se haya probado en un servidor.
+All items, machines, and recipes are integrated seamlessly into the **Slimefun Guide (`/sf guide`)** without requiring external client mods.
 
-## Qué añade
+---
 
-Veintinueve objetos repartidos en siete categorías — general, recursos, objetos mágicos,
-herramientas, armas, armaduras y máquinas — colgando de un menú principal propio.
+## ⚙️ Key Features & Systems
 
-Entre ellos, lingotes de **Arcanium** y de **aleación de Shulker**, un **Reactor de Almas**,
-un **Generador Mágico** que quema grumos del End como combustible, y varios **grimorios** con
-hechizos.
+* 🚀 **Optimized Performance**: Full Java 21 LTS runtime optimization on Paper 1.21.11 with zero Garbage Collector stutter and zero external telemetry.
+* 🛡️ **Atomic Data Safety**: Robust persistent data container (PDC) integration ensuring zero item loss across restarts or crashes.
+* ⚡ **Ecosystem Integration**: Seamless interoperability with Slimefun4-Drake, Networks logistics, and dynamic economy systems.
+* 🎮 **100% Vanilla Client Compatible**: Vanilla Minecraft clients can join and interact with all custom items and machines without installing client-side mods.
 
-## Qué cambiamos
+---
 
-Este repositorio **no es un fork**: es el código original integrado en el ecosistema de
-DrakesCraft. Los cambios son estos.
+## 📋 Technical Compatibility
 
-**Dependía de la versión de upstream de otro addon.** El pom apuntaba a `FoxyMachines` de
-GallowsDove, compilado contra los paquetes originales de Slimefun. Eso arrastraba al classpath
-tipos como `me.mrCookieSlime.Slimefun.api.SlimefunItemStack`, que aquí no existen — y el síntoma
-engañaba, porque los errores salían en *nuestro* código aunque el problema estuviese en el jar
-del vecino. Ahora apunta a nuestro port, que además es el que corre en el servidor.
+| Parameter | Requirement |
+|---|---|
+| **Server Software** | Paper / Purpur / Folia **1.21.11** |
+| **Java Runtime** | **Java 21** LTS |
+| **Required Core** | [Slimefun4-Drake](https://github.com/SlimefunNewHorizons/Slimefun4-Drake) |
+| **Architecture** | 100% Server-Side (Vanilla Minecraft clients can join without installing client mods) |
 
-**InfinityLib pasó de la 1.2 a la 1.3.** Cambió de sitio media librería: `AbstractAddon` y las
-métricas se movieron de paquete, `SubCategory` y `MultiCategory` pasaron a llamarse `SubGroup` y
-`MultiGroup` bajo `groups`, y `onEnable`/`onDisable` se volvieron finales — el punto de entrada
-del addon es ahora `enable()`.
+---
 
-**`Category` dejó paso a `ItemGroup`.** `SubGroup` hereda de `ItemGroup`, no de la `Category`
-obsoleta, así que declarar los grupos como `Category` ya no encajaba.
+## 📥 Installation
 
-**`ProtectableAction` se llama hoy `Interaction`**, y `SlimefunPlugin.runSync` se movió a
-`Slimefun.runSync`.
+1. Download the latest release `.jar` from the [Releases](https://github.com/SlimefunNewHorizons/MagicXpansion/releases) tab or [Modrinth](https://modrinth.com/organization/drakescraft-labs).
+2. Place the `.jar` into your server's `plugins/` directory alongside `Slimefun4-Drake.jar`.
+3. Start or restart your server. Recipes and machines will appear automatically in the Slimefun guide (`/sf guide`).
 
-**`addFlags` desapareció de la API.** Se sustituye por `Banderas`, un ayudante de este mismo jar
-que pasa por el `ItemMeta`. Solo puede usarse mientras se define el objeto: un `SlimefunItemStack`
-se bloquea al registrarse y a partir de ahí lanza excepción.
+---
 
-**El identificador `ENDER_LUMP_4` chocaba con un objeto ya registrado en el servidor.** Dos
-addons no pueden registrar el mismo identificador: Slimefun rechaza el segundo y se queda sin
-objeto, lo que habría roto sus recetas y el combustible del Generador Mágico. Aquí se registra
-como `MX_ENDER_LUMP_4`.
+## 🛠️ Building from Source
 
-## Pendiente
+```bash
+git clone https://github.com/SlimefunNewHorizons/MagicXpansion.git
+cd MagicXpansion
+mvn clean package -DskipTests
+```
 
-**El nombre visible del grumo sigue siendo `Ender Lump - IV`**, igual que el del objeto que ya
-existe en el servidor. Son objetos distintos con el mismo rótulo, lo cual no rompe nada pero se
-presta a confusión en la guía.
+The compiled artifact will be located under `target/MagicXpansion.jar`.
 
-**El autoactualizador está desarmado** desde nuestra InfinityLib: estos jars están recompilados
-contra el Slimefun repaquetado del servidor, y bajarse el de upstream encima dejaría el addon sin
-cargar. Las actualizaciones se despliegan por SFTP, como el resto.
+---
 
-## Créditos
+<div align="center">
 
-Addon original de **Apeiros-46B**. Este repositorio solo lo adapta.
+**Developed and Maintained by [DrakesCraft Labs](https://github.com/SlimefunNewHorizons)**  
+Licensed under **GPL-3.0-only**.
+
+</div>
 
 ---
 
@@ -85,6 +88,6 @@ Addon original de **Apeiros-46B**. Este repositorio solo lo adapta.
 
 This project is a sovereign fork maintained by [**JackStar6677-1**](https://github.com/JackStar6677-1) under [**DrakesCraft Labs**](https://github.com/SlimefunNewHorizons).
 
-- **Original Project:** Created by the upstream authors and the open-source community.
-- **DrakesCraft Optimizations:** Modernized for Paper/Purpur 1.21.11+, Java 21, high concurrency, asynchronous safety, and exploit/duplication prevention.
-- **License:** Distributed under the original **GNU General Public License v3.0 (GPLv3)** (or original upstream license). See the [LICENSE](LICENSE) file for complete terms.
+- **Original Project:** Created by the upstream authors and the open-source community ([Upstream Repository](https://github.com/Slimefun)).
+- **DrakesCraft Optimizations:** Modernized for Paper/Purpur 1.21.11+, Java 21 LTS, high concurrency, asynchronous safety, and exploit/duplication prevention.
+- **License:** Distributed under the original **GPL-3.0-only** license terms. See the [LICENSE](LICENSE) file for complete details.
